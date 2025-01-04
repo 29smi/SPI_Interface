@@ -4,9 +4,7 @@
 
 ////////////////////////////////////
 //
-// Name - Siem Mihreteab
-// Course - ECE6213
-// Project 9 - reset synchronization
+// reset synchronization
 //
 ///////////////////////////////////
 
