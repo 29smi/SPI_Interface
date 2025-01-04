@@ -1,10 +1,7 @@
 `timescale 1ns / 1ps
 
 ///////////////////////////////////////
-// Professor Matthew LaRue
-// ECE6213
-// 64-QAM modulator testbench
-// Only SPI interface implemented
+// SPI interface testbench
 ///////////////////////////////////////
 
 module proj9_top_tb(
