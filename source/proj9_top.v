@@ -17,12 +17,12 @@ module proj9_top(
 );
 
    // internal signals
-   wire [15:0]			   reg_read_data;   
-   wire [7:0]			   reg_addr;   
-   wire [15:0]			   reg_write_data;
-   wire				       reg_write_enable;
-   wire				       reg_read_enable;
-   wire                    rst_n_syn;
+   wire [15:0]	reg_read_data;   
+   wire [7:0]	reg_addr;   
+   wire [15:0]	reg_write_data;
+   wire	        reg_write_enable;
+   wire		reg_read_enable;
+   wire         rst_n_syn;
 	       
 
    spi_interface cmd_interface(			       
