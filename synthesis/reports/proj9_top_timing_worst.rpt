@@ -1,0 +1,377 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'proj9_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : proj9_top
+Version: O-2018.06-SP1
+Date   : Fri Nov 22 21:09:22 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: IBM_CMOS8HP_SS125
+Wire Load Model Mode: enclosed
+
+  Startpoint: cmd_interface/MISO_pos_edge_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: cmd_interface/MISO_reg
+            (rising edge-triggered flip-flop clocked by SCLK')
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            1.000      1.000
+  cmd_interface/MISO_pos_edge_reg/CLK (DFFR_E)           0.000 #    1.000 r
+  cmd_interface/MISO_pos_edge_reg/Q (DFFR_E)             0.293      1.293 r
+  cmd_interface/MISO_reg/D (DFFR_K)                      0.000      1.294 r
+  data arrival time                                                 1.294
+
+  clock SCLK' (rise edge)                                5.000      5.000
+  clock network delay (ideal)                            1.000      6.000
+  clock uncertainty                                     -0.700      5.300
+  cmd_interface/MISO_reg/CLK (DFFR_K)                    0.000      5.300 r
+  library setup time                                    -0.159      5.141
+  data required time                                                5.141
+  --------------------------------------------------------------------------
+  data required time                                                5.141
+  data arrival time                                                -1.294
+  --------------------------------------------------------------------------
+  slack (MET)                                                       3.847
+
+
+  Startpoint: cmd_interface/MISO_enable_pos_edge_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: cmd_interface/MISO_enable_reg
+            (rising edge-triggered flip-flop clocked by SCLK')
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            1.000      1.000
+  cmd_interface/MISO_enable_pos_edge_reg/CLK (DFFR_E)    0.000 #    1.000 r
+  cmd_interface/MISO_enable_pos_edge_reg/Q (DFFR_E)      0.293      1.293 r
+  cmd_interface/MISO_enable_reg/D (DFFR_K)               0.000      1.294 r
+  data arrival time                                                 1.294
+
+  clock SCLK' (rise edge)                                5.000      5.000
+  clock network delay (ideal)                            1.000      6.000
+  clock uncertainty                                     -0.700      5.300
+  cmd_interface/MISO_enable_reg/CLK (DFFR_K)             0.000      5.300 r
+  library setup time                                    -0.159      5.141
+  data required time                                                5.141
+  --------------------------------------------------------------------------
+  data required time                                                5.141
+  data arrival time                                                -1.294
+  --------------------------------------------------------------------------
+  slack (MET)                                                       3.847
+
+
+  Startpoint: cmd_interface/MISO_pos_edge_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: cmd_interface/MISO_reg
+            (rising edge-triggered flip-flop clocked by SCLK')
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            1.000      1.000
+  cmd_interface/MISO_pos_edge_reg/CLK (DFFR_E)           0.000 #    1.000 r
+  cmd_interface/MISO_pos_edge_reg/Q (DFFR_E)             0.186      1.186 f
+  cmd_interface/MISO_reg/D (DFFR_K)                      0.000      1.186 f
+  data arrival time                                                 1.186
+
+  clock SCLK' (rise edge)                                5.000      5.000
+  clock network delay (ideal)                            1.000      6.000
+  clock uncertainty                                     -0.700      5.300
+  cmd_interface/MISO_reg/CLK (DFFR_K)                    0.000      5.300 r
+  library setup time                                    -0.224      5.076
+  data required time                                                5.076
+  --------------------------------------------------------------------------
+  data required time                                                5.076
+  data arrival time                                                -1.186
+  --------------------------------------------------------------------------
+  slack (MET)                                                       3.890
+
+
+  Startpoint: cmd_interface/MISO_enable_pos_edge_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: cmd_interface/MISO_enable_reg
+            (rising edge-triggered flip-flop clocked by SCLK')
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            1.000      1.000
+  cmd_interface/MISO_enable_pos_edge_reg/CLK (DFFR_E)    0.000 #    1.000 r
+  cmd_interface/MISO_enable_pos_edge_reg/Q (DFFR_E)      0.186      1.186 f
+  cmd_interface/MISO_enable_reg/D (DFFR_K)               0.000      1.186 f
+  data arrival time                                                 1.186
+
+  clock SCLK' (rise edge)                                5.000      5.000
+  clock network delay (ideal)                            1.000      6.000
+  clock uncertainty                                     -0.700      5.300
+  cmd_interface/MISO_enable_reg/CLK (DFFR_K)             0.000      5.300 r
+  library setup time                                    -0.224      5.076
+  data required time                                                5.076
+  --------------------------------------------------------------------------
+  data required time                                                5.076
+  data arrival time                                                -1.186
+  --------------------------------------------------------------------------
+  slack (MET)                                                       3.890
+
+
+  Startpoint: cmd_interface/reg_addr_reg[4]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: regi_modu/reg_read_data_reg[8]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  register_array     500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            1.000      1.000
+  cmd_interface/reg_addr_reg[4]/CLK (DFFR_E)             0.000 #    1.000 r
+  cmd_interface/reg_addr_reg[4]/Q (DFFR_E)               0.315      1.315 r
+  cmd_interface/U80/Z (INVERT_I)                         0.055      1.370 f
+  cmd_interface/U200/Z (INVERT_N)                        0.054      1.424 r
+  cmd_interface/reg_addr[4] (spi_interface)              0.000      1.424 r
+  regi_modu/reg_addr[4] (register_array)                 0.000      1.424 r
+  regi_modu/U19305/Z (AND2_H)                            0.071      1.495 r
+  regi_modu/U19304/Z (BUFFER_H)                          0.056      1.551 r
+  regi_modu/U10201/Z (INVERT_F)                          0.044      1.595 f
+  regi_modu/U10200/Z (INVERT_J)                          0.052      1.647 r
+  regi_modu/U23035/Z (AND2_H)                            0.073      1.719 r
+  regi_modu/U19248/Z (BUFFER_H)                          0.056      1.775 r
+  regi_modu/U10194/Z (INVERT_F)                          0.036      1.811 f
+  regi_modu/U3479/Z (INVERT_H)                           0.050      1.861 r
+  regi_modu/U19866/Z (INVERT_K)                          0.047      1.908 f
+  regi_modu/U19867/Z (INVERT_M)                          0.051      1.959 r
+  regi_modu/U11027/Z (AND2_H)                            0.070      2.028 r
+  regi_modu/U1313/Z (INVERT_D)                           0.047      2.075 f
+  regi_modu/U15693/Z (INVERT_D)                          0.064      2.138 r
+  regi_modu/U20661/Z (CLK_I)                             0.090      2.228 r
+  regi_modu/U20660/Z (BUFFER_J)                          0.054      2.282 r
+  regi_modu/U20662/Z (CLK_O)                             0.090      2.372 r
+  regi_modu/U19707/Z (NAND2_D)                           0.050      2.422 f
+  regi_modu/U10180/Z (BUFFER_F)                          0.076      2.497 f
+  regi_modu/U1149/Z (INVERT_D)                           0.057      2.555 r
+  regi_modu/U10179/Z (INVERT_E)                          0.058      2.612 f
+  regi_modu/U1314/Z (INVERT_H)                           0.042      2.654 r
+  regi_modu/U19705/Z (INVERT_H)                          0.044      2.698 f
+  regi_modu/U19706/Z (INVERT_K)                          0.052      2.750 r
+  regi_modu/U22215/Z (INVERT_M)                          0.045      2.796 f
+  regi_modu/U2713/Z (AOI22_B)                            0.154      2.949 r
+  regi_modu/U16575/Z (INVERT_H)                          0.061      3.011 f
+  regi_modu/U8896/Z (AO22_F)                             0.127      3.137 f
+  regi_modu/U8897/Z (INVERT_D)                           0.060      3.197 r
+  regi_modu/U193/Z (INVERT_E)                            0.051      3.248 f
+  regi_modu/U15212/Z (NOR2_C)                            0.088      3.336 r
+  regi_modu/U15213/Z (INVERT_E)                          0.057      3.393 f
+  regi_modu/U15211/Z (NOR2_C)                            0.081      3.475 r
+  regi_modu/U15210/Z (INVERT_E)                          0.056      3.530 f
+  regi_modu/U7693/Z (OA21_F)                             0.103      3.633 f
+  regi_modu/U7694/Z (INVERT_D)                           0.060      3.693 r
+  regi_modu/U6014/Z (INVERT_E)                           0.051      3.744 f
+  regi_modu/U6019/Z (NOR2_C)                             0.080      3.824 r
+  regi_modu/U6020/Z (INVERT_E)                           0.057      3.881 f
+  regi_modu/U6016/Z (NOR2_C)                             0.089      3.971 r
+  regi_modu/U6013/Z (INVERT_E)                           0.056      4.026 f
+  regi_modu/U5815/Z (NOR4_A)                             0.150      4.177 r
+  regi_modu/U5816/Z (CLKI_I)                             0.133      4.309 f
+  regi_modu/U8228/Z (AO22_F)                             0.118      4.427 f
+  regi_modu/reg_read_data_reg[8]/D (DFFR_E)              0.000      4.427 f
+  data arrival time                                                 4.427
+
+  clock SCLK (rise edge)                              10000.000  10000.000
+  clock network delay (ideal)                            1.000   10001.000
+  clock uncertainty                                     -0.700   10000.300
+  regi_modu/reg_read_data_reg[8]/CLK (DFFR_E)            0.000   10000.300 r
+  library setup time                                    -0.235   10000.064
+  data required time                                             10000.064
+  --------------------------------------------------------------------------
+  data required time                                             10000.064
+  data arrival time                                                -4.427
+  --------------------------------------------------------------------------
+  slack (MET)                                                    9995.637
+
+
+  Startpoint: cmd_interface/MISO_reg
+              (rising edge-triggered flip-flop clocked by SCLK')
+  Endpoint: MISO (output port clocked by v_SCLK)
+  Path Group: v_SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCLK' (rise edge)                 5.000      5.000
+  clock network delay (ideal)             1.000      6.000
+  cmd_interface/MISO_reg/CLK (DFFR_K)     0.000      6.000 r
+  cmd_interface/MISO_reg/Q (DFFR_K)       0.272      6.272 r
+  cmd_interface/U227/Z (INVERTBAL_J)      0.077      6.349 f
+  cmd_interface/U228/Z (INVERT_O)         0.064      6.412 r
+  cmd_interface/MISO (spi_interface)      0.000      6.412 r
+  MISO (out)                              0.002      6.415 r
+  data arrival time                                  6.415
+
+  clock v_SCLK (rise edge)             10000.000  10000.000
+  clock network delay (ideal)             0.000   10000.000
+  output external delay                  -1.000   9999.000
+  data required time                              9999.000
+  -----------------------------------------------------------
+  data required time                              9999.000
+  data arrival time                                 -6.415
+  -----------------------------------------------------------
+  slack (MET)                                     9992.585
+
+
+  Startpoint: cmd_interface/MISO_enable_reg
+              (rising edge-triggered flip-flop clocked by SCLK')
+  Endpoint: MISO_enable
+            (output port clocked by v_SCLK)
+  Path Group: v_SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK' (rise edge)                                5.000      5.000
+  clock network delay (ideal)                            1.000      6.000
+  cmd_interface/MISO_enable_reg/CLK (DFFR_K)             0.000      6.000 r
+  cmd_interface/MISO_enable_reg/Q (DFFR_K)               0.272      6.272 r
+  cmd_interface/U225/Z (INVERTBAL_J)                     0.077      6.349 f
+  cmd_interface/U226/Z (INVERT_O)                        0.064      6.412 r
+  cmd_interface/MISO_enable (spi_interface)              0.000      6.412 r
+  MISO_enable (out)                                      0.002      6.415 r
+  data arrival time                                                 6.415
+
+  clock v_SCLK (rise edge)                            10000.000  10000.000
+  clock network delay (ideal)                            0.000   10000.000
+  output external delay                                 -1.000   9999.000
+  data required time                                             9999.000
+  --------------------------------------------------------------------------
+  data required time                                             9999.000
+  data arrival time                                                -6.415
+  --------------------------------------------------------------------------
+  slack (MET)                                                    9992.585
+
+
+  Startpoint: cmd_interface/MISO_reg
+              (rising edge-triggered flip-flop clocked by SCLK')
+  Endpoint: MISO (output port clocked by v_SCLK)
+  Path Group: v_SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCLK' (rise edge)                 5.000      5.000
+  clock network delay (ideal)             1.000      6.000
+  cmd_interface/MISO_reg/CLK (DFFR_K)     0.000      6.000 r
+  cmd_interface/MISO_reg/Q (DFFR_K)       0.179      6.179 f
+  cmd_interface/U227/Z (INVERTBAL_J)      0.051      6.230 r
+  cmd_interface/U228/Z (INVERT_O)         0.047      6.277 f
+  cmd_interface/MISO (spi_interface)      0.000      6.277 f
+  MISO (out)                              0.002      6.279 f
+  data arrival time                                  6.279
+
+  clock v_SCLK (rise edge)             10000.000  10000.000
+  clock network delay (ideal)             0.000   10000.000
+  output external delay                  -1.000   9999.000
+  data required time                              9999.000
+  -----------------------------------------------------------
+  data required time                              9999.000
+  data arrival time                                 -6.279
+  -----------------------------------------------------------
+  slack (MET)                                     9992.721
+
+
+  Startpoint: cmd_interface/MISO_enable_reg
+              (rising edge-triggered flip-flop clocked by SCLK')
+  Endpoint: MISO_enable
+            (output port clocked by v_SCLK)
+  Path Group: v_SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_interface      500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+  proj9_top          500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK' (rise edge)                                5.000      5.000
+  clock network delay (ideal)                            1.000      6.000
+  cmd_interface/MISO_enable_reg/CLK (DFFR_K)             0.000      6.000 r
+  cmd_interface/MISO_enable_reg/Q (DFFR_K)               0.179      6.179 f
+  cmd_interface/U225/Z (INVERTBAL_J)                     0.051      6.230 r
+  cmd_interface/U226/Z (INVERT_O)                        0.047      6.277 f
+  cmd_interface/MISO_enable (spi_interface)              0.000      6.277 f
+  MISO_enable (out)                                      0.002      6.279 f
+  data arrival time                                                 6.279
+
+  clock v_SCLK (rise edge)                            10000.000  10000.000
+  clock network delay (ideal)                            0.000   10000.000
+  output external delay                                 -1.000   9999.000
+  data required time                                             9999.000
+  --------------------------------------------------------------------------
+  data required time                                             9999.000
+  data arrival time                                                -6.279
+  --------------------------------------------------------------------------
+  slack (MET)                                                    9992.721
+
+
+1
