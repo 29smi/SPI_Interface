@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# list of design files to be compiled
+
+ver_files=("../../source/spi_interface.v"
+		  "../../source/register_array.v"
+		"../../source/proj9_top.v"
+		"../../source/rst_syn.v"
+	  "../testbench/proj9_top_tb.v")	

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# list of design files to be compiled
+
+ver_files=("../../synthesis/netlists/proj9_top_syn.v"
+        "../testbench/proj9_top_syn_tb.v")  
+
+
